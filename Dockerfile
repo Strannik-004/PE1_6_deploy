@@ -11,4 +11,8 @@ COPY . .
 
 EXPOSE 5000
 
+<<<<<<< HEAD
 CMD ["gunicorn", "--bind", "0.0.0.0:5000", "app:app"]
+=======
+CMD ["gunicorn", "--bind", "0.0.0.0:5000", "app:app"]
+>>>>>>> aa4e107e081c9951a176cd917952f3a9595c390e
