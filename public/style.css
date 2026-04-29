@@ -1,76 +1,83 @@
-<<<<<<< HEAD
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #101827;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+margin: 0;
+font-family: 'Segoe UI', Tahoma, sans-serif;
+background: #e9ecef;
 }
 
+/* Карточка */
 .card {
-    background: #1f2937;
-    padding: 40px;
-    border-radius: 20px;
-    text-align: center;
-=======
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #101827, #1e3a8a);
-    color: white;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+background: linear-gradient(135deg, #1e2a3a, #2f4f7f);
+color: #ffffff;
+margin: 40px auto;
+padding: 40px;
+border-radius: 20px;
+max-width: 1100px;
+text-align: center;
+box-shadow: 0 10px 30px rgba(0,0,0,0.3);
 }
 
-.card {
-    width: 90%;
-    max-width: 760px;
-    background: rgba(31, 41, 55, 0.92);
-    padding: 45px;
-    border-radius: 28px;
-    text-align: center;
-    box-shadow: 0 20px 50px rgba(0,0,0,0.35);
-}
-
+/* Бейдж */
 .badge {
-    display: inline-block;
-    padding: 8px 14px;
-    background: #2563eb;
-    border-radius: 999px;
-    font-size: 14px;
+display: inline-block;
+background: #3b82f6;
+padding: 6px 14px;
+border-radius: 20px;
+font-size: 14px;
+margin-bottom: 20px;
 }
 
+/* Заголовок */
 h1 {
-    font-size: 42px;
-    margin: 20px 0;
-    color: #93c5fd;
+font-size: 36px;
+margin: 10px 0 20px;
 }
 
+/* Текст */
 .text {
-    font-size: 20px;
-    line-height: 1.6;
-    color: #e5e7eb;
+font-size: 18px;
+opacity: 0.9;
+margin-bottom: 30px;
 }
 
+/* Блок шагов */
 .steps {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 14px;
-    margin: 30px 0;
+display: flex;
+justify-content: space-between;
+gap: 15px;
+flex-wrap: wrap;
+margin-bottom: 30px;
 }
 
+/* Кнопки */
 .steps div {
-    background: #111827;
-    padding: 16px;
-    border-radius: 16px;
+background: #1a2330;
+color: #ffffff;
+padding: 12px 18px;
+border-radius: 12px;
+flex: 1;
+min-width: 160px;
+text-align: center;
+font-weight: 500;
+transition: 0.3s;
 }
 
-.time {
-    color: #bfdbfe;
->>>>>>> aa4e107e081c9951a176cd917952f3a9595c390e
+/* Hover эффект */
+.steps div:hover {
+background: #2f4f7f;
+transform: translateY(-3px);
+cursor: pointer;
 }
+
+/* Галочка */
+.steps div::before {
+content: "✔ ";
+color: #22c55e;
+font-weight: bold;
+}
+
+/* Время */
+.time {
+font-size: 16px;
+opacity: 0.8;
+}
+
